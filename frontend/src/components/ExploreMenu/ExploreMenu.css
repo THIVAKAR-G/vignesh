@@ -1,0 +1,55 @@
+.explore-menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Always 2 items per row */
+    gap: 20px;
+    justify-content: center;
+  }
+  .explore-menu h1 {
+    padding: 20px;
+  }
+  
+  .explore-menu-grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    text-align: center;
+  }
+  
+  .explore-menu-grid-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .explore-menu-grid-item p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .explore-menu-grid-item.active {
+    background-color: white;
+    transform: scale(1.05);
+  }
+  
+  /* Ensure that 2 items are displayed in a row on all screen sizes */
+  @media (max-width: 768px) {
+    .explore-menu-grid {
+      grid-template-columns: repeat(2, 1fr); /* Still 2 items on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .explore-menu-grid {
+      grid-template-columns: repeat(2, 1fr); /* Ensure 2 items on mobile devices */
+    }
+  }
+  
+  .food-display-section {
+    margin-top: 40px;
+  }
